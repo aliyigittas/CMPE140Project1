@@ -5,7 +5,7 @@ R1: Bölünen R2: Bölen R4:1 R5: 0
 3)	ADD (R5, R4, R5)
 4)	IfJump (R3,1)
 5)	Subtract (R5, R4, R5)
-6)	Read/Write (R1, M1)
+6)	Read/Write (R5, M1)
 
 
 NOT FINISHED YET!
