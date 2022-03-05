@@ -1,8 +1,8 @@
-R1: Bölünen sayı
+R1: Bölünen sayı, Kalan
 R2: Bölen Sayı
 M1: 1
 M2: 0
-M3: Algoritma sonunda oluşacak cevap
+R5, M3: Algoritma sonunda oluşacak cevap
 
 1)	Subtract (R1, R2, R1)
 2)	> (R1, R2, R3)
@@ -11,9 +11,11 @@ M3: Algoritma sonunda oluşacak cevap
 5)	IfJump (R3,1)
 6)	IfJump (R6, 9)
 7)	Subtract (R5, R4, R5)
-8)	IfJump (R3,10)
+8)	IfJump (R3,11)
 9)	ADD (R5, R4, R5)
-10)	Read/Write (R5, M3)
+10)	Substract (R1, R2, R1)
+11)	Read/Write (R5, M3)
+
 
 
 ADDalg.
