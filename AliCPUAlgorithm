@@ -1,28 +1,46 @@
 R1: Bölünen sayı, Kalan
 R2: Bölen Sayı
-M1: 1
-M2: 0
-R5, M3: Algoritma sonunda oluşacak cevap
+R4: Bölüm
+R5:1
+R6:0
+M1:0
+M2:0
 
-1)	Subtract (R1, R2, R1)
-2)	> (R1, R2, R3)
-3)	= (R1, R2, R6)
-4)	ADDalg. (M1, M2, R5)
-5)	IfJump (R3,1)
-6)	IfJump (R6, 9)
-7)	Subtract (R5, R4, R5)
-8)	IfJump (R3,11)
-9)	ADDalg. (M1, M2, R5)
-10)	Substract (R1, R2, R1)
-11)	Read/Write (R5, M3)
-
-
-
-ADDalg.
-
-Read/Write (M1, R4)
-Read/Write (M2, R5)
-ADD (R5, R4, R5)
+1)	Read/Write (R1, M1)
+2)	Read/Write (R2, M2)
+3)	< (R1, R2, R6)
+4)	IfJump (R6, 11)
+5)	= (R1, R2, R6)
+6)	IfJump (R6, 13)
+7)	> (R1, R2, R6)
+8)	IfJump (R6, 9)
+9)	IsBıgger (M1, M2, R3)
+10)	IfJump (R3,15)
+11)	IsSmaller (M1, M2, R3)
+12)	IfJump (R3, 15)
+13)	IsEqual (M1, M2, R4)
+14)	IfJump (R4,15)
+15)	Read/Write ()
 
 
-NOT FINISHED YET!
+IsBigger
+1)	Read/Write (M1, R1)
+2)	Read/Write (M2, R2)
+3)	> (R1, R2, R3)
+4)	Subtract (R1, R2, R1)
+5)	ADD (R4, R5, R4)
+6)	IfJump (R3, 3)
+7)	ADD (R1, R2, R1)
+8)	Subtract (R4, R5, R4)
+
+IsEqual
+1)	Read/Write (M1, R1)
+2)	Read/Write (M2, R2)
+3)	= (R1, R2, R3)
+4)	Subtract (R1, R2, R1)
+5)	ADD (R4, R5, R4)
+
+IsSmaller
+1)	Read/Write (M1, R1)
+2)	Read/Write (M2, R2)
+3)	< (R1, R2, R3)
