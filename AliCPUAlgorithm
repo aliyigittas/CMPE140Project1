@@ -1,7 +1,7 @@
 R1: Bölünen R2: Bölen R4:1 R5: 0
 
 1)	Subtract (R1, R2, R1)
-2)	> (R1, R2, R3)
+2)	>= (R1, R2, R3)
 3)	ADD (R5, R4, R5)
 4)	IfJump (R3,1)
 5)	Subtract (R5, R4, R5)
