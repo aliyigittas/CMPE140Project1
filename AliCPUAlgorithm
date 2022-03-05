@@ -20,7 +20,8 @@ M2:0
 12)	IfJump (R3, 15)
 13)	IsEqual (M1, M2, R4)
 14)	IfJump (R4,15)
-15)	Read/Write ()
+15)	Read/Write (R1, R2)
+16)	Read/Write (R4, R1)
 
 
 IsBigger
@@ -32,6 +33,7 @@ IsBigger
 6)	IfJump (R3, 3)
 7)	ADD (R1, R2, R1)
 8)	Subtract (R4, R5, R4)
+9)	Read/Write (R1, M1)
 
 IsEqual
 1)	Read/Write (M1, R1)
@@ -45,6 +47,7 @@ IsSmaller
 2)	Read/Write (M2, R2)
 3)	< (R1, R2, R3)
 
+Now, R1 is quotient, R2 is remainder
 
 
 NOT FINISHED YET!
