@@ -44,3 +44,19 @@ IsSmaller
 
 
 Not finished!
+BONUS ALGORITHM==> MULTIPLIFICATION
+
+R1: Number 1
+R2: Number 2
+R3: 0
+R5: 1
+
+
+1)	= (R1, R3, R4)
+2)	IfJump (R4, 8)
+3)	= (R2, R3, R4)
+4)	IfJump (R4, 8) 
+5)	ADD (R3, R1, R3)
+6)	Subtract (R2, R5, R2)
+7)	IfJump (R2, 3)
+8)	Read/Write (R3, M1)
