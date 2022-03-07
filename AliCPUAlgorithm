@@ -9,15 +9,14 @@ R5: 1
 3)	< (R1, R2, R6)
 4)	IfJump (R6, 11)
 5)	= (R1, R2, R6)
-6)	IfJump (R6, 13)
-7)	> (R1, R2, R6)
-8)	IsBıgger (M1, M2, R3)
-9)	IfJump (R3,13)
-10)	IsSmaller (M1, M2, R3)
-11)	IfJump (R3, 13)
-12)	IsEqual (M1, M2, R4)
-13)	Read/Write (R1, R2)
-14)	Read/Write (R4, R1)
+6)	IfJump (R6, 12)
+7)	IsBıgger (M1, M2, R3)
+8)	IfJump (R3,12)
+9)	IsSmaller (M1, M2, R3)
+10)	IfJump (R3, 12)
+11)	IsEqual (M1, M2, R4)
+12)	Read/Write (R1, R2)
+13)	Read/Write (R4, R1)
 
 End===> R1: Quotient R2: Remainder
 
