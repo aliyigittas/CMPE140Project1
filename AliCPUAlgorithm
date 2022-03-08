@@ -1,5 +1,6 @@
 R1: Dividend
 R2: Divisor
+R3:0
 R4:0
 R5: 1
 M1: 0
@@ -50,6 +51,7 @@ BONUS ALGORITHM==> MULTIPLIFICATION
 R1: Number 1
 R2: Number 2
 R3: 0
+R4:0
 R5: 1
 
 
