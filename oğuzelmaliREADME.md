@@ -15,4 +15,3 @@ M2: 0
 8)Read/Write (R2, m2)
 
 End===> R1: Quotient R2: Remainder
-
