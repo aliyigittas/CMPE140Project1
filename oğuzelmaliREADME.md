@@ -13,3 +13,4 @@ M2: 0
 7)	Read/Write(r1, m1) 
 8)	Read/Write(r3, m2)  
 End===> r3: Quotient r1: Remainder
+..........
