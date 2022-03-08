@@ -1,8 +1,9 @@
 R1: Dividend
 R2: Divisor
+R4:0
+R5: 1
 M1: 0
 M2: 0
-R5: 1
 
 1)	Read/Write (R1, M1)
 2)	Read/Write (R2, M2)
