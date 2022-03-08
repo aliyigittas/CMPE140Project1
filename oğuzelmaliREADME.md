@@ -9,6 +9,6 @@ M2: 0
 2)	Readwrite(r2,m2)      
 3)	Sub(r1,r2,r1)             
 4)	Add(r3,r4,r3)             
-5)	> =(r1,r2,r5)             
+5)>=(r1,r2,r5)             
 6)	Ifjump(r5,3)             
 
