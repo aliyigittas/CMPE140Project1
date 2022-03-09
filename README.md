@@ -1,4 +1,4 @@
-# CMPE140Project1
+# Division Algorithm
 
 First of all, Our inputs R1 is dividend, R2 is divisor. We gave R5 is always 1, R3, R4, R6 are 0 in the beginning. 
 First step, we copied R1 and R2 values to M1 and M2.
