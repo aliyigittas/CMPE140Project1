@@ -1,6 +1,7 @@
 # CMPE140Project1
 
-First of all, Our inputs R1 is dividend, R2 is divisor. We gave R5 is always 1, others are 0. First step, we copied R1 and R2 values to M1 and M2.
+First of all, Our inputs R1 is dividend, R2 is divisor. We gave R5 is always 1, R3, R4, R6 are 0 in the beginning. 
+First step, we copied R1 and R2 values to M1 and M2.
 Then, we are going to compare R1 and R2, if R1<R2 then R6 will be 1, otherwise 0. If R6 is 1, we are moving to 8th line. This subalgoritm named "IsSmaller".
 If R6 is 0, now we will check R1 and R2 is equal or not. If they are equal, R6 will be 1, and we are moving to 10th line. This subalgorithm named "IsEqual".
 If R6 is again 0, there is one chance which is R1>R2. Now we are in the 7th line. This subalgorithm named "IsBıgger". If we get R3:0 in this subalgorithm, we will move to 8th line.
@@ -10,7 +11,7 @@ Now we are in 11th line, and we are changing the registers in correct place beca
 
 IsBıgger
 
-From the memory, we transfer M1 to R1, and from m2 to R2. We compare r1 and r2, if R1 is larger, R3 becomes 1. In the Substract part, we subtract r2 from r1 and write the result to r1. Since R4 is 0 we added 1 (R5). Since R3 is 1, we went back to the if jump step. This time, we check the newly formed R1 with R2, if it is larger again, it writes R3:1 instead of it, if it is smaller or equal, R3:0. We repeat this step until the number is less than the divisor thanks to IfJump. The last comparison results R3:0, but since addition and subtraction operations are performed afterwards, we undo the last operation in next steps. Finally, R1 is registered to M1.
+From the memory, we transfer M1 to R1, and from M2 to R2. We compare R1 and R2, if R1 is larger, R3 becomes 1. In the Substract part, we subtract R2 from R1 and write the result to R1. Since R4 is 0 we added 1 (R5). Since R3 is 1, we went back to the if jump step. This time, we check the newly formed R1 with R2, if it is larger again, it writes R3:1 instead of it, if it is smaller or equal, R3:0. We repeat this step until the number is less than the divisor thanks to IfJump. The last comparison results R3:0, but since addition and subtraction operations are performed afterwards, we undo the last operation in next steps. Finally, R1 is registered to M1.
 
 
 IsSmaller
