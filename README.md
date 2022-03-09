@@ -1,0 +1,66 @@
+# CMPE140Project1
+R1: Dividend
+R2: Divisor
+R3:0
+R4:0
+R5: 1
+M1: 0
+M2: 0
+
+1)	Read/Write (R1, M1)
+2)	Read/Write (R2, M2)
+3)	< (R1, R2, R6)
+4)	IfJump (R6, 8)
+5)	= (R1, R2, R6)
+6)	IfJump (R6, 10)
+7)	IsBıgger (M1, M2, R3)
+8)	IsSmaller (M1, M2, R3)
+9)	IfJump (R3, 11)
+10)	IsEqual (M1, M2, R4)
+11)	Read/Write (R1, R2)
+12)	Read/Write (R4, R1)
+
+End===> R1: Quotient R2: Remainder
+
+
+IsBigger
+1)	Read/Write (M1, R1)
+2)	Read/Write (M2, R2)
+3)	> (R1, R2, R3)
+4)	Subtract (R1, R2, R1)
+5)	ADD (R4, R5, R4)
+6)	IfJump (R3, 3)
+7)	ADD (R1, R2, R1)
+8)	Subtract (R4, R5, R4)
+9)	Read/Write (R1, M1)
+
+IsEqual
+1)	Read/Write (M1, R1)
+2)	Read/Write (M2, R2)
+3)	Subtract (R1, R2, R1)
+4)	ADD (R4, R5, R4)
+
+IsSmaller
+1)	Read/Write (M1, R1)
+2)	Read/Write (M2, R2)
+3)	< (R1, R2, R3)
+
+
+Not finished!
+BONUS ALGORITHM==> MULTIPLIFICATION
+
+R1: Number 1
+R2: Number 2
+R3: 0
+R4:0
+R5: 1
+
+
+1)	= (R1, R3, R4)
+2)	IfJump (R4, 8)
+3)	= (R2, R3, R4)
+4)	IfJump (R4, 8) 
+5)	ADD (R3, R1, R3)
+6)	Subtract (R2, R5, R2)
+7)	IfJump (R2, 5)
+8)	Read/Write (R3, M1)
