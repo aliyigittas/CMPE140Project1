@@ -8,6 +8,9 @@ Then, we will do the steps in IsSmaller. If this subalgorithm gives R3:1 output,
 If the IsSmaller gives R3:0 output, we will go to 10th step, This subalgorithm called "IsEqual". We will do steps in this subalgorithm. 
 Now we are in 11th line, and we are changing the registers in correct place because our remainder is in R1, our quotient is in R4 right now.
 
+IsBıgger
+
+From the memorandum, we transfer M1 to R1, and from m2 to R2. I compare r1 and r2, if it is large, r3 becomes 1. In the Substract part, I subtract r2 from r1 and write the result to r1. Since R4 is 0 I added 1 (r5). Since R3 is 1, I went back to the if jump step. This time, I check the newly formed r1 and r2, if it is correct, it writes 1 instead of it, if it is wrong, we write 0. We repeat this step until the number is less than the divisor. The last comparison is r3 0, but since addition and subtraction operations are performed afterwards, we undo the last operation. Finally, R1 is registered to M1.
 
 
 IsSmaller
