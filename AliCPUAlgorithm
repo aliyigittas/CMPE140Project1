@@ -36,7 +36,7 @@ IsBigger
 IsEqual
 1)	Read/Write (M1, R1)
 2)	Read/Write (M2, R2)
-3)	Subtract (R1, R2, R1)
+3)	Subtract (R1, R1, R1)
 4)	ADD (R4, R5, R4)
 
 IsSmaller
