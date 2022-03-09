@@ -7,3 +7,24 @@ If R6 is again 0, there is one chance which is R1>R2. Now we are in the 7th line
 Then, we will do the steps in IsSmaller. If this subalgorithm gives R3:1 output, we will move to 11th line. In 11th line we are changing the registers in correct place because our remainder is in R1, our quotient is in R4 right now.
 If the IsSmaller gives R3:0 output, we will go to 10th step, This subalgorithm called "IsEqual". We will do steps in this subalgorithm. 
 Now we are in 11th line, and we are changing the registers in correct place because our remainder is in R1, our quotient is in R4 right now.
+
+
+
+IsSmaller
+
+In this subalgorithm we are checking if R1>R2 or not and gives the result in R3.
+
+
+IsEqual
+
+In this subalgorithm we are checking if R1=R2 or not and gives the result in R3.
+
+
+
+
+BONUS MULTIPLIFICATION ALGORİTHM
+
+Our inputs are R1 and R2. and we assume that always R3:0, R4:0, R5:1.
+In first lines, We are checking if one of the registers are 0, the algorithm will go to the end with 0 result.
+Then we will start adding 0 and first number, then we will subtract 1 in the second number, we will repeat the process when we reach 0 in second number.
+In the end, our result is stored in R3, we saved this result in M1.
