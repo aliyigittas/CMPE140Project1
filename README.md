@@ -8,6 +8,7 @@ If R6 is again 0, there is one chance which is R1>R2. Now we are in the 7th line
 Then, we will do the steps in IsSmaller. If this subalgorithm gives R3:1 output, we will move to 11th line. In 11th line we are changing the registers in correct place because our remainder is in R1, our quotient is in R4 right now.
 If the IsSmaller gives R3:0 output, we will go to 10th step, This subalgorithm called "IsEqual". We will do steps in this subalgorithm. 
 Now we are in 11th line, and we are changing the registers in correct place because our remainder is in R1, our quotient is in R4 right now.
+In the end, R1 is quotient, R2 is remainder.
 
 IsBıgger
 
@@ -22,6 +23,8 @@ In this subalgorithm we are checking if R1>R2 or not and gives the result in R3.
 IsEqual
 
 In this subalgorithm we are checking if R1=R2 or not and gives the result in R3.
+If R3 is 1, we subtract R1 from R1, now R1 is 0.
+In the next line, we will add R4 to R5 (which is 1).
 
 
 
