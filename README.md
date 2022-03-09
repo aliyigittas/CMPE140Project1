@@ -10,17 +10,17 @@ If the IsSmaller gives R3:0 output, we will go to 10th step, This subalgorithm c
 Now we are in 11th line, and we are changing the registers in correct place because our remainder is in R1, our quotient is in R4 right now.
 In the end, R1 is quotient, R2 is remainder.
 
-###IsBıgger
+### IsBıgger
 
 From the memory, we transfer M1 to R1, and from M2 to R2. We compare R1 and R2, if R1 is larger, R3 becomes 1. In the Substract part, we subtract R2 from R1 and write the result to R1. Since R4 is 0 we added 1 (R5). Since R3 is 1, we went back to the if jump step. This time, we check the newly formed R1 with R2, if it is larger again, it writes R3:1 instead of it, if it is smaller or equal, R3:0. We repeat this step until the number is less than the divisor thanks to IfJump. The last comparison results R3:0, but since addition and subtraction operations are performed afterwards, we undo the last operation in next steps. Finally, R1 is registered to M1.
 
 
-###IsSmaller
+### IsSmaller
 
 In this subalgorithm we are checking if R1>R2 or not and gives the result in R3.
 
 
-###IsEqual
+### IsEqual
 
 In this subalgorithm we are checking if R1=R2 or not and gives the result in R3.
 If R3 is 1, we subtract R1 from R1, now R1 is 0.
@@ -29,7 +29,7 @@ In the next line, we will add R4 to R5 (which is 1).
 
 
 
-##BONUS MULTIPLIFICATION ALGORİTHM
+## BONUS MULTIPLIFICATION ALGORİTHM
 
 Our inputs are R1 and R2. and we assume that always R3:0, R4:0, R5:1.
 In first lines, We are checking if one of the registers are 0, the algorithm will go to the end with 0 result.
