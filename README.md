@@ -10,7 +10,7 @@ Now we are in 11th line, and we are changing the registers in correct place beca
 
 IsBıgger
 
-From the memorandum, we transfer M1 to R1, and from m2 to R2. I compare r1 and r2, if it is large, r3 becomes 1. In the Substract part, I subtract r2 from r1 and write the result to r1. Since R4 is 0 I added 1 (r5). Since R3 is 1, I went back to the if jump step. This time, I check the newly formed r1 and r2, if it is correct, it writes 1 instead of it, if it is wrong, we write 0. We repeat this step until the number is less than the divisor. The last comparison is r3 0, but since addition and subtraction operations are performed afterwards, we undo the last operation. Finally, R1 is registered to M1.
+From the memory, we transfer M1 to R1, and from m2 to R2. We compare r1 and r2, if R1 is larger, R3 becomes 1. In the Substract part, we subtract r2 from r1 and write the result to r1. Since R4 is 0 we added 1 (R5). Since R3 is 1, we went back to the if jump step. This time, we check the newly formed R1 with R2, if it is larger again, it writes R3:1 instead of it, if it is smaller or equal, R3:0. We repeat this step until the number is less than the divisor thanks to IfJump. The last comparison results R3:0, but since addition and subtraction operations are performed afterwards, we undo the last operation in next steps. Finally, R1 is registered to M1.
 
 
 IsSmaller
